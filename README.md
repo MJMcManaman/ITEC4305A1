@@ -1,6 +1,6 @@
 # ITEC4305A1
 
-This assignment is about predicting the percentage of churned customer with the following featuers:
+This assignment is about predicting the percentage of churned customer with the following featuers:<br>
 -> Attrition_Flag
 -> Customer_Age
 -> Gender
