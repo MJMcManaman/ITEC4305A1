@@ -22,3 +22,4 @@ This assignment is about predicting the percentage of churned customer with the 
 -> Total_Ct_Chng_Q4_Q1: Change in Transaction Count (Q4 over Q1)<br>
 -> Avg_Utilization_Ratio: Average Card Utilization Ratio<br>
 
+Dataset Link:https://www.kaggle.com/datasets/sakshigoyal7/credit-card-customers
