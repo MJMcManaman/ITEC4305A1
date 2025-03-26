@@ -26,21 +26,23 @@ Dataset Link:https://www.kaggle.com/datasets/sakshigoyal7/credit-card-customers
 # What we covered using machine learning:
 
 1. **Data preprocessing**:
-   Visualization with histograms, barcharts, scatterplots, and correlation matrix.
-   Handled missing and unnecessary data.
-   Data type transformation (categorical features to numerial features using label_encoding).
-   Detected outliers but did not remove any, reason being those are important to the dataset.
-2. Chanllenge we faced during data preprocessing - **Imbalanced dataset**
-   What we did to resolve this issue - **SMOTE (synthetic minority oversampling technique)**
+   Visualization with histograms, barcharts, scatterplots, and correlation matrix.<br>
+   Handled missing and unnecessary data.<br>
+   Data type transformation (categorical features to numerial features using label_encoding).<br>
+   Detected outliers but did not remove any, reason being those are important to the dataset.<br>
+2. Chanllenge we faced during data preprocessing - **Imbalanced dataset**<br>
+   What we did to resolve this issue - **SMOTE (synthetic minority oversampling technique)**<br>
    Why it helps - SMOTE helps balance imbalanced datasets by generating synthetic samples for the minority class. The re-sampled dataset has an equal number of samples for both classes, improving model performance on the minority class.
-3. **Model Selection and Performance Evaluations**:
-   **Naive Bayes** - We first used Naïve Bayes classifier for predicting customer churn using features like age, credit limit, and transaction history. We employed stratified 5-fold cross-validation to ensure reliable performance metrics across balanced data splits. Key evaluation metrics include accuracy, precision, recall, RMSE, and R², with results averaged across folds. The aggregated confusion matrix visualizes prediction errors.
+   
+3. **Model Selection and Performance Evaluations**:<br>
+   **Naive Bayes** - We first used Naïve Bayes classifier for predicting customer churn using features like age, credit limit, and transaction history. We employed stratified 5-fold cross-validation to ensure reliable performance metrics across balanced data splits. Key evaluation metrics include accuracy, precision, recall, RMSE, and R², with results averaged across folds. The aggregated confusion matrix visualizes prediction errors.<br>
    **Decision Tree** - Next we chose Decision Tree classifier for predicting customer churn using features like age, credit limit, and transaction history. We also uses stratified 5-fold cross-validation to ensure balanced splits and reliable metrics. Key performance measures include accuracy, precision, recall, RMSE, and R², averaged across folds. <br>
-   By limiting tree depth, the model balances interpretability and performance. Results show how well the tree distinguishes churners from retained customers, providing actionable insights while avoiding overfitting.
+   By limiting tree depth, the model balances interpretability and performance. Results show how well the tree distinguishes churners from retained customers, providing actionable insights while avoiding overfitting.<br>
    **XGBoost** - Next step we used XGBoost classifier for predicting customer churn using features like age, credit limit, and transaction history. It employs stratified 5-fold cross-validation to ensure robust performance metrics. Key evaluation measures include accuracy, precision, recall, RMSE, and R², with results averaged across folds. <br>
-   XGBoost’s gradient-boosted trees optimize predictive performance while minimizing overfitting. The model's effectiveness is summarized through mean metrics, providing insights into its ability to classify churn accurately.
+   XGBoost’s gradient-boosted trees optimize predictive performance while minimizing overfitting. The model's effectiveness is summarized through mean metrics, providing insights into its ability to classify churn accurately.<br>
    **Random Forest** - Lastly, we used Random Forest classifier (100 trees) for predicting customer churn using features like age, credit history, and transaction patterns. Also uses stratified 5-fold cross-validation to ensure reliable performance metrics. The model tracks accuracy, precision, recall, RMSE, and R², with results averaged across folds. <br>
    Random Forest's ensemble approach combines multiple decision trees to improve generalization and reduce overfitting. The output provides clear performance metrics, demonstrating the model's effectiveness in identifying customer churn patterns from the given features.
+   
 4. **Hyperparameter Tuning on XGBoost and RF** - We used GridSearchCV to optimize customer churn prediction. It tests combinations of key parameters including tree depth, learning rate, and subsampling ratios. The search employs stratified 3-fold cross-validation to evaluate model performance on accuracy, RMSE, and R² metrics. We output the best parameter set and corresponding scores, balancing predictive power and computational efficiency. This approach systematically improved model performance by finding the optimal configuration for the XGBoost algorithm.<br>
    We performed grid search optimization for a Random Forest model to predict customer churn. It tests combinations of key parameters including number of trees, split criterion, and leaf/node sample requirements. We output the optimal parameter set and corresponding evaluation scores. This systematic approach ensures the Random Forest classifier achieves peak performance by balancing model complexity and predictive power for customer churn prediction.
 
