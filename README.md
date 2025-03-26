@@ -1,6 +1,7 @@
 # ITEC4305A1
 
 This assignment is about predicting the percentage of churned customer with the following featuers:<br>
+
 **Attrition_Flag**: Indicates whether the customer is an existing customer or has closed their account (attrited).<br>
 **Customer_Age**:The age of the customer. (Numerical)<br>
 **Gender**:The gender of the customer. (Categories: "M" (Male), "F" (Female))<br>
