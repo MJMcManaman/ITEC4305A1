@@ -35,7 +35,7 @@ Dataset Link:https://www.kaggle.com/datasets/sakshigoyal7/credit-card-customers
    Why it helps - SMOTE helps balance imbalanced datasets by generating synthetic samples for the minority class. The re-sampled dataset has an equal number of samples for both classes, improving model performance on the minority class.
    
 3. **Model Selection and Performance Evaluations**:<br>
-   **Naive Bayes** - We first used Naïve Bayes classifier for predicting customer churn using features like age, credit limit, and transaction history. We employed stratified 5-fold cross-validation to ensure reliable performance metrics across balanced data splits. Key evaluation metrics include accuracy, precision, recall, RMSE, and R², with results averaged across folds. The aggregated confusion matrix visualizes prediction errors.
+   **Naive Bayes** - We first used Naïve Bayes classifier for predicting customer churn using features like age, credit limit, and transaction history. We employed stratified 5-fold cross-validation to ensure reliable performance metrics across balanced data splits. Key evaluation metrics include accuracy, precision, recall, RMSE, and R², with results averaged across folds. The aggregated confusion matrix visualizes prediction errors.<br>
    **Result** RMSE: 0.4351
 
    **Decision Tree** - Next we chose Decision Tree classifier for predicting customer churn using features like age, credit limit, and transaction history. We also uses stratified 5-fold cross-validation to ensure balanced splits and reliable metrics. Key performance measures include accuracy, precision, recall, RMSE, and R², averaged across folds. <br>
@@ -43,15 +43,15 @@ Dataset Link:https://www.kaggle.com/datasets/sakshigoyal7/credit-card-customers
    **Result** RMSE: 0.3048
    
    **XGBoost** - Next step we used XGBoost classifier for predicting customer churn using features like age, credit limit, and transaction history. It employs stratified 5-fold cross-validation to ensure robust performance metrics. Key evaluation measures include accuracy, precision, recall, RMSE, and R², with results averaged across folds. <br>
-   XGBoost’s gradient-boosted trees optimize predictive performance while minimizing overfitting. The model's effectiveness is summarized through mean metrics, providing insights into its ability to classify churn accurately.
+   XGBoost’s gradient-boosted trees optimize predictive performance while minimizing overfitting. The model's effectiveness is summarized through mean metrics, providing insights into its ability to classify churn accurately.<br>
    **Result** RMSE: 0.2174
    
    **Random Forest** - Lastly, we used Random Forest classifier (100 trees) for predicting customer churn using features like age, credit history, and transaction patterns. Also uses stratified 5-fold cross-validation to ensure reliable performance metrics. The model tracks accuracy, precision, recall, RMSE, and R², with results averaged across folds. <br>
-   Random Forest's ensemble approach combines multiple decision trees to improve generalization and reduce overfitting. The output provides clear performance metrics, demonstrating the model's effectiveness in identifying customer churn patterns from the given features.
+   Random Forest's ensemble approach combines multiple decision trees to improve generalization and reduce overfitting. The output provides clear performance metrics, demonstrating the model's effectiveness in identifying customer churn patterns from the given features.<br>
    **Result** RMSE: 0.1940
    
 5. **Hyperparameter Tuning**:<br>
-   **On XGBoost**: We used GridSearchCV to optimize customer churn prediction. It tests combinations of key parameters including tree depth, learning rate, and subsampling ratios. The search employs stratified 3-fold cross-validation to evaluate model performance on accuracy, RMSE, and R² metrics. We output the best parameter set and corresponding scores, balancing predictive power and computational efficiency. This approach systematically improved model performance by finding the optimal configuration for the XGBoost algorithm.
+   **On XGBoost**: We used GridSearchCV to optimize customer churn prediction. It tests combinations of key parameters including tree depth, learning rate, and subsampling ratios. The search employs stratified 3-fold cross-validation to evaluate model performance on accuracy, RMSE, and R² metrics. We output the best parameter set and corresponding scores, balancing predictive power and computational efficiency. This approach systematically improved model performance by finding the optimal configuration for the XGBoost algorithm.<br>
    **Result** Before: 0.2174, after: 0.13106
    
    **On Random Forest**: We performed grid search optimization for a Random Forest model to predict customer churn. It tests combinations of key parameters including number of trees, split criterion, and leaf/node sample requirements. We output the optimal parameter set and corresponding evaluation scores. This systematic approach ensures the Random Forest classifier achieves peak performance by balancing model complexity and predictive power for customer churn prediction.<br>
